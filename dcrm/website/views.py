@@ -23,7 +23,7 @@ def home(request):
             return redirect('home')
         
     else :            
-        return render(request , 'home.html', {} )
+        return render(request , 'home.html', {'records':records} )
 
 def logout_user(request):
     logout(request)
